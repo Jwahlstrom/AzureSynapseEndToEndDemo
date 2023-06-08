@@ -4,7 +4,7 @@
 		"parameters": {
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "jwahlstrom"
+				"defaultValue": "synw-jwahlstrom"
 			},
 			"DatabaseName": {
 				"type": "string",
