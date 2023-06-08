@@ -395,14 +395,8 @@
 					"referenceName": "SynapseDedicatedPoolLS",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"DatabaseName": {
-							"value": "@pipeline().parameters.DatabaseName",
-							"type": "Expression"
-						},
-						"ServerName": {
-							"value": "@pipeline().parameters.ServerName",
-							"type": "Expression"
-						}
+						"ServerName": "synw-jwahlstrom",
+						"DatabaseName": "jwahlstromdedipool"
 					}
 				},
 				"typeProperties": {
@@ -482,7 +476,7 @@
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "jwahlstromdedipool"
+				"defaultValue": "synw-jwahlstrom"
 			},
 			"SparkPoolName": {
 				"type": "string",
