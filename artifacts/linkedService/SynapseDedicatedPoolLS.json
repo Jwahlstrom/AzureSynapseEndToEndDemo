@@ -1,16 +1,6 @@
 {
 	"name": "SynapseDedicatedPoolLS",
 	"properties": {
-		"parameters": {
-			"DatabaseName": {
-				"type": "string",
-				"defaultValue": "jwahlstromdedipool"
-			},
-			"ServerName": {
-				"type": "string",
-				"defaultValue": "jwahlstrom"
-			}
-		},
 		"annotations": [],
 		"type": "AzureSqlDW",
 		"typeProperties": {
