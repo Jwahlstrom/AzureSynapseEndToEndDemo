@@ -101,11 +101,13 @@
 						},
 						"type": "BigDataPoolReference"
 					},
+					"executorSize": "Medium",
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
 						"spark.dynamicAllocation.minExecutors": null,
 						"spark.dynamicAllocation.maxExecutors": null
 					},
+					"driverSize": "Medium",
 					"numExecutors": null
 				}
 			},
@@ -393,12 +395,12 @@
 					"referenceName": "SynapseDedicatedPoolLS",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"DatabaseName": {
-							"value": "@pipeline().parameters.DatabaseName",
-							"type": "Expression"
-						},
 						"ServerName": {
 							"value": "@pipeline().parameters.ServerName",
+							"type": "Expression"
+						},
+						"DatabaseName": {
+							"value": "@pipeline().parameters.DatabaseName",
 							"type": "Expression"
 						}
 					}
@@ -472,19 +474,19 @@
 		"parameters": {
 			"StorageName": {
 				"type": "string",
-				"defaultValue": "synapsee2elake"
+				"defaultValue": "stdatalakejwahlstrom"
 			},
 			"DatabaseName": {
 				"type": "string",
-				"defaultValue": "synapsee2edw"
+				"defaultValue": "jwahlstromdedipool"
 			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "synapsee2e"
+				"defaultValue": "synw-jwahlstrom"
 			},
 			"SparkPoolName": {
 				"type": "string",
-				"defaultValue": "synapsee2espark"
+				"defaultValue": "jwahlstromspark"
 			},
 			"DatasetSize": {
 				"type": "string",

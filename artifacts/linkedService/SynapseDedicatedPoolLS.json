@@ -2,13 +2,13 @@
 	"name": "SynapseDedicatedPoolLS",
 	"properties": {
 		"parameters": {
-			"DatabaseName": {
-				"type": "string",
-				"defaultValue": "healthcare"
-			},
 			"ServerName": {
 				"type": "string",
-				"defaultValue": "health"
+				"defaultValue": "synw-jwahlstrom"
+			},
+			"DatabaseName": {
+				"type": "string",
+				"defaultValue": "jwahlstromdedipool"
 			}
 		},
 		"annotations": [],
